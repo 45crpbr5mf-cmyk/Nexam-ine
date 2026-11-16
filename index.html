@@ -49,10 +49,29 @@
       <p id="message">Demo is currently paused.</p>
     </section>
 
-    <section class="panel">
-      <h3>Wallet</h3>
-      <p>Demo wallet balance</p>
-      <p>No deposits or withdrawals are available.</p>
+    <section class="panel" id="wallet">
+      <h3>My Wallet</h3>
+      <p class="muted">Simulated wallet balance</p>
+
+      <h2 id="walletBalance">0.00001250 BTC</h2>
+
+      <p>Demo wallet address</p>
+      <div class="wallet-address">
+        <code id="walletAddress">NEXA-DEMO-1234-5678</code>
+      </div>
+
+      <button id="copyAddress">Copy demo address</button>
+
+      <p id="copyMessage" class="muted">
+        This is a fictional demo address.
+      </p>
+
+      <h3>Transaction History</h3>
+      <div id="transactions">
+        <p>No demo transactions yet.</p>
+      </div>
+
+      <small>Demo only. No deposits or withdrawals.</small>
     </section>
 
     <section class="panel">
