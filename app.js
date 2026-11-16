@@ -76,11 +76,14 @@ function updateStatistics() {
   const max = Math.max(...values, 1);
 
   chart.innerHTML = values.map(value => `
-    <div title="${value} demo rewards"
-      style="flex:1;height:${Math.max(8, value / max * 75)}px;
-      background:#27d69a;border-radius:5px 5px 0 0;">
-    </div>
-  `).join("");
+  <div title="${value} demo rewards"
+    style="flex:1;min-width:0;
+    height:${Math.max(8, value / max * 75)}px;
+    margin:0 5px;
+    background:#27d69a;
+    border-radius:5px 5px 0 0;">
+  </div>
+`).join("");
 }
 
 function recordReward() {
@@ -94,12 +97,8 @@ function recordReward() {
 
   transactions = transactions.slice(0, 10);
 
-  if (!stats.activity.length || stats.activity.length === 12) {
-    stats.activity.push(0);
-  }
-
-  const last = stats.activity.length - 1;
-  stats.activity[last] += 1;
+  stats.activity.push(1);
+stats.activity = stats.activity.slice(-12);
 
   updateBalance();
   updateTransactions();
