@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>NexaMine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">N</div>
+    <div>
+      <h2>NexaMine</h2>
+      <small>MINING DASHBOARD</small>
+    </div>
+    <span class="demo">DEMO</span>
+  </header>
+
+  <main>
+    <p class="eyebrow">YOUR OVERVIEW</p>
+    <h1>Welcome to NexaMine</h1>
+    <p class="muted">Your cryptocurrency dashboard.</p>
+
+    <section class="panel balance">
+      <p>SIMULATED BTC BALANCE</p>
+      <h2 id="balance">0.00001250 BTC</h2>
+      <small>Illustrative value only</small>
+    </section>
+
+    <section class="stats">
+      <div class="panel">
+        <small>HASHRATE</small>
+        <h3>125.4 GH/s</h3>
+        <small>Demo value</small>
+      </div>
+      <div class="panel">
+        <small>SESSION</small>
+        <h3 id="status">Paused</h3>
+        <small>Demo mode</small>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h3>Mining controls</h3>
+      <button id="start">Start demo</button>
+      <button id="pause" class="secondary">Pause demo</button>
+      <p id="message">Demo is currently paused.</p>
+    </section>
+
+    <section class="panel">
+      <h3>Wallet</h3>
+      <p>Demo wallet balance</p>
+      <p>No deposits or withdrawals are available.</p>
+    </section>
+
+    <section class="panel">
+      <h3>Statistics</h3>
+      <p>Mining activity: Simulated</p>
+      <p>Network connection: Preview only</p>
+    </section>
+
+    <p class="warning">
+      IMPORTANT: NexaMine is a demonstration.
+      It does not mine real cryptocurrency, hold funds,
+      or perform blockchain transactions.
+    </p>
+  </main>
+
+  <footer>NexaMine · Prototype</footer>
+  <script src="app.js"></script>
+</body>
+</html>
