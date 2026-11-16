@@ -1,4 +1,5 @@
 
+
 const savedBalance = localStorage.getItem("nexamime_demo_balance");
 
 let balance = savedBalance !== null
